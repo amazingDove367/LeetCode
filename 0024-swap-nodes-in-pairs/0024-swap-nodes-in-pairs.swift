@@ -18,8 +18,6 @@ class Solution {
 
         var third = second.next
         second.next = first 
-        first.next = third
-
         first.next = helper(third)
 
         return second
